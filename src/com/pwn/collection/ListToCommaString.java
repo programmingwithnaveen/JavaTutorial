@@ -1,4 +1,4 @@
-package com.pwn;
+package com.pwn.collection;
 
 import java.util.Arrays;
 import java.util.List;
