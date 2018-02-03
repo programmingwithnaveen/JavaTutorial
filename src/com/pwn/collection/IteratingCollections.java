@@ -9,16 +9,20 @@ import java.util.Map;
 public class IteratingCollections {
 
 	public static void main(String[] args) {
-		List<String> fruitList = new ArrayList<>(Arrays.asList("Apple", "Banana", "Grape"));
-		System.out.println("***************Iterate List***********************");
+		List<String> fruitList = new ArrayList<>(
+				Arrays.asList("Apple", "Banana", "Grape"));
+		System.out.println(
+				"***************Iterate List***********************");
 		fruitList.forEach(System.out::println);
-		System.out.println("***************Iterate Map***********************");
+		System.out.println(
+				"***************Iterate Map***********************");
 		Map<Integer, String> fruitMap = new HashMap<>();
 		fruitMap.put(1, "Apple");
 		fruitMap.put(2, "Banana");
 		fruitMap.put(3, "Grape");
-		
-		fruitMap.forEach((key, value) -> System.out.println("Key: " + key + " Value: " + value));
+
+		fruitMap.forEach((key, value) -> System.out
+				.println("Key: " + key + " Value: " + value));
 
 	}
 

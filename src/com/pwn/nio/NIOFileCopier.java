@@ -12,11 +12,14 @@ public class NIOFileCopier {
 		File sourceFile = new File("c://install/instructions.txt");
 		File destFile = new File("c://install/copy.txt");
 		if (!sourceFile.exists() || !destFile.exists()) {
-			System.out.println("Source or destination file doesn't exist");
+			System.out.println(
+					"Source or destination file doesn't exist");
 			return;
 		}
-		try (FileChannel srcChannel = new FileInputStream(sourceFile).getChannel();
-				FileChannel destChannel = new FileOutputStream(destFile).getChannel()) {
+		try (FileChannel srcChannel = new FileInputStream(sourceFile)
+				.getChannel();
+				FileChannel destChannel = new FileOutputStream(
+						destFile).getChannel()) {
 			srcChannel.transferTo(0, srcChannel.size(), destChannel);
 		} catch (IOException e) {
 			e.printStackTrace();

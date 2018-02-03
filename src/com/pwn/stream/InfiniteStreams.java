@@ -2,14 +2,11 @@ package com.pwn.stream;
 
 import java.util.stream.IntStream;
 
-
 /**
- *  It is possible to generate a Stream that does not end. Calling a terminal method on an infinite Stream causes the
-Stream to enter an infinite loop. The limit method of a Stream can be used to limit the number of terms of the
-Stream that Java processes.
-This example generates a Stream of all natural numbers, starting with the number 1. Each successive term of the
-Stream is one higher than the previous. By calling the limit method of this Stream, only the first five terms of the
-Stream are considered and printed.
+ * This example generates a Stream of all natural numbers, starting with the
+ * number 1. Each successive term of the Stream is one higher than the previous.
+ * By calling the limit method of this Stream, only the first five terms of the
+ * Stream are considered and printed.
  *
  */
 public class InfiniteStreams {

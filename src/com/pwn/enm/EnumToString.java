@@ -7,13 +7,12 @@ public class EnumToString {
 		}
 
 	public static void main(String[] args) {
-		/*name() is an internal method in enum that returns the String representation of the enum, the return String
-				represents exactly how the enum value was defined.*/
+		/*name() is an internal method in enum that returns the String representation of the enum,
+		 *  the return String represents exactly how the enum value was defined.*/
 		System.out.println(DAYS.SUNDAY.name());
 		
 		/*or Use toString() method */
-		System.out.println(DAYS.SUNDAY.toString());
+		System.out.println(DAYS.FRIDAY.toString());
 		
 	}
-
 }

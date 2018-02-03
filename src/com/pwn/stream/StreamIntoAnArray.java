@@ -12,7 +12,5 @@ public class StreamIntoAnArray {
 						                .toArray(String[]::new);
 		
 		System.out.println(Arrays.toString(fruitArray));
-
 	}
-
 }

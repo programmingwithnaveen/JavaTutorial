@@ -8,8 +8,7 @@ public class dateFormat {
 	public static void main(String[] args) {
 		Date today = new Date();
 		SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MMM-yy"); 
-		System.out.println(dateFormat.format(today)); 
-		
+		System.out.println(dateFormat.format(today)); 	
 		dateFormat.applyPattern("dd-MM-yyyy");
 		System.out.println(dateFormat.format(today)); 
 		dateFormat.applyPattern("dd-MM-yyyy HH:mm:ss E");
